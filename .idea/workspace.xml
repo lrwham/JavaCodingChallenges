@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a17878a3-af91-4c3b-85b7-c73bde9cabf6" name="Changes" comment="Started">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/lrwham/oddballs/DecimalToRoman.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/lrwham/oddballs/RomanNumerals.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/lrwham/sorting/NthLargestElement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/lrwham/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lrwham/Main.java" afterDir="false" />
-    </list>
+    <list default="true" id="a17878a3-af91-4c3b-85b7-c73bde9cabf6" name="Changes" comment="Started" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -71,6 +64,7 @@
       <updated>1675125939032</updated>
       <workItem from="1675125944914" duration="5000000" />
       <workItem from="1675133740928" duration="55000" />
+      <workItem from="1675211148849" duration="31000" />
     </task>
     <task id="LOCAL-00001" summary="Started">
       <created>1675128687213</created>
