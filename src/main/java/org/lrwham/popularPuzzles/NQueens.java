@@ -24,9 +24,9 @@ public class NQueens {
 
     }
 
-    private boolean isValid(Stack<Piece> board){
-        if(board.size() < 2) return true;
-
-        
-    }
+//    private boolean isValid(Stack<Piece> board){
+//        if(board.size() < 2) return true;
+//
+//
+//    }
 }
