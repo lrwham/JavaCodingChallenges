@@ -4,17 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a17878a3-af91-4c3b-85b7-c73bde9cabf6" name="Changes" comment="Started">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/lrwham/oddballs/TestDecimalToRoman.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/lrwham/oddballs/DecimalToRomanTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/lrwham/primes/IsPrimeTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/lrwham/sorting/NthLargestTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/lrwham/oddballs/DecimalToRoman.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lrwham/oddballs/DecimalToRoman.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/lrwham/oddballs/RomanNumerals.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/lrwham/popularPuzzles/NQueens.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lrwham/popularPuzzles/NQueens.java" afterDir="false" />
-    </list>
+    <list default="true" id="a17878a3-af91-4c3b-85b7-c73bde9cabf6" name="Changes" comment="Started" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
