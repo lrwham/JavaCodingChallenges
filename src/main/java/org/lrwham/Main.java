@@ -1,12 +1,20 @@
 package org.lrwham;
 
-import org.lrwham.sorting.NthLargestElement;
+import org.lrwham.ciphers.Caesar;
 
 public class Main {
     public static void main(String[] args) {
 
-        long test[] = {12, -18, 13, -2323, 2323, 43, 23, 10099234};
+        String plain = "Hello, World!";
 
-        System.out.println(NthLargestElement.secondLargestElement(test));
+        System.out.println(plain);
+
+        String secret = Caesar.encipher(plain, 6);
+
+        System.out.println(secret);
+
+        System.out.println(Caesar.decipher(secret, 6));
+
+        System.out.println(Caesar.encipher("Hello, World!", 6).equals("Nkrru, Cuxrj!"));
     }
 }
