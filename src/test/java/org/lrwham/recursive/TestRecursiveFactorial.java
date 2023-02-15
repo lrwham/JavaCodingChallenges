@@ -5,7 +5,9 @@ import org.lrwham.recursive.RecursiveFactorial;
 
 import java.math.BigInteger;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
+
 
 public class TestRecursiveFactorial {
     @Test
@@ -32,4 +34,11 @@ public class TestRecursiveFactorial {
 
 
     }
+
+    @Test
+    void testNegativeInput() {
+        assertThrows(IllegalArgumentException.class, () -> RecursiveFactorial.factorial(-1));
+        assertThrows(IllegalArgumentException.class, () -> RecursiveFactorial.factorialBig(new BigInteger("-1")));
+    }
+
 }
