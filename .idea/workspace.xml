@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a17878a3-af91-4c3b-85b7-c73bde9cabf6" name="Changes" comment="Started">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/lrwham/recursive/RecursiveReverseString.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/lrwham/sorting/ReverseString.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/lrwham/recursive/TestRecursiveReverseString.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/lrwham/sorting/TestReverseString.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/lrwham/recursive/RecursiveFactorial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lrwham/recursive/RecursiveFactorial.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/lrwham/recursive/TestRecursiveFactorial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/lrwham/recursive/TestRecursiveFactorial.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
