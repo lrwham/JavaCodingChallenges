@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a17878a3-af91-4c3b-85b7-c73bde9cabf6" name="Changes" comment="Started" />
+    <list default="true" id="a17878a3-af91-4c3b-85b7-c73bde9cabf6" name="Changes" comment="Started">
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/lrwham/recursive/RecursiveReverseString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/lrwham/recursive/RecursiveReverseString.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
