@@ -1,36 +1,38 @@
 package org.lrwham;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-
-import org.lrwham.sorting.InsertionSort;
+import org.lrwham.sorting.BubbleSortArray;
 
 public class Main {
     public static void main(String[] args) {
 
-        ArrayList<String> words = new ArrayList<>();
+        String[] words = new String[10];
         populateArrayListStrings(words);
 
-        System.out.println(words);
-        System.out.println("\n\n\n");
+        BubbleSortArray sorter = new BubbleSortArray();
 
-        InsertionSort<String> sorter = new InsertionSort<>();
+        sorter.sort(words);
 
-        ArrayList<String> sortedWords = sorter.sort(words);
+        for (String s : words){
+            System.out.println(s);
 
-        System.out.println(sortedWords);
+        }
 
         System.out.println("Finished");
         
     }
 
-    private static void populateArrayListStrings(ArrayList<String> strings){
+    private static void populateArrayListStrings(String[] strings){
         
-        strings.add("x");
-        strings.add("b");
-        strings.add("a");
-        strings.add("d");
-        strings.add("e");
-        strings.add("1");
+        strings[0] = "x";
+        strings[1] = "b";
+        strings[2] = "a";
+        strings[3] = "d";
+        strings[4] = "e";
+        strings[5] = "1";
+        strings[6] = "2";
+        strings[7] = "a1";
+        strings[8] = "1a";
+        strings[9] = "1";
+        
     }
 }
