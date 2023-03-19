@@ -2,7 +2,7 @@ package org.lrwham.sorting;
 
 public class BubbleSortArray implements SortArray {
     @Override
-    public <E extends Comparable<E>> E[] sort(E[] unsorted) {
+    public <E extends Comparable<E>> void sort(E[] unsorted) {
         int n = unsorted.length;
 
         for (int i = 0; i < n - 1; i++) {
@@ -16,10 +16,8 @@ public class BubbleSortArray implements SortArray {
                 }
             }
             if (swapped == false) {
-                break;
+                return;
             }
         }
-
-        return unsorted;
     }
 }

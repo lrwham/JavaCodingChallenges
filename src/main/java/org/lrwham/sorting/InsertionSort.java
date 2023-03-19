@@ -2,7 +2,6 @@ package org.lrwham.sorting;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Iterator;
 
 public class InsertionSort<E extends Comparable<E>> implements Sort<E>{
 
