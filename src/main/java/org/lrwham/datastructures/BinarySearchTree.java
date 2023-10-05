@@ -2,59 +2,62 @@ package org.lrwham.datastructures;
 
 import java.util.Random;
 
-public class BinarySearchTree <T extends Comparable<T>>{
-
+public class BinarySearchTree<T extends Comparable<T>> {
 
     BinaryTreeNode<T> root;
     int size;
 
-    public BinarySearchTree(){
+    public BinarySearchTree() {
         root = null; // new Node();
         size = 0;
     }
 
-    public BinaryTreeNode<T> find(T data){
-        if(root == null) return null;
-        
-        if(root.data == data) return root;
+    public BinaryTreeNode<T> find(T data) {
+        if (root == null)
+            return null;
+
+        if (root.data == data)
+            return root;
 
         BinaryTreeNode<T> currentNode = root;
-        //boolean found = false;
+        // boolean found = false;
 
-        while(true){
-            if(currentNode == null) return null;
+        while (true) {
+            if (currentNode == null)
+                return null;
 
-            if(data.compareTo(currentNode.data) == 0){
+            if (data.compareTo(currentNode.data) == 0) {
                 return currentNode;
-            }
-            else if(data.compareTo(currentNode.data) > 0){
+            } else if (data.compareTo(currentNode.data) > 0) {
                 currentNode = currentNode.right;
-            }else{
+            } else {
                 currentNode = currentNode.left;
             }
 
         }
     }
 
-    public BinaryTreeNode<T> findParent(T data){
-        if(root == null) return null;
-        
-        if(root.data == data) return null;
+    public BinaryTreeNode<T> findParent(T data) {
+        if (root == null)
+            return null;
+
+        if (root.data == data)
+            return null;
 
         BinaryTreeNode<T> parentNode = null;
         BinaryTreeNode<T> currentNode = root;
-        //boolean found = false;
+        // boolean found = false;
 
-        while(true){
-            if(currentNode == null) return parentNode;
-
-            if(data.compareTo(currentNode.data) == 0){
+        while (true) {
+            if (currentNode == null)
                 return parentNode;
-            }
-            else if(data.compareTo(currentNode.data) > 0){
+
+            if (data.compareTo(currentNode.data) == 0) {
+                return parentNode;
+            } else if (data.compareTo(currentNode.data) > 0) {
                 parentNode = currentNode;
                 currentNode = currentNode.right;
-            }else{
+            } else {
                 parentNode = currentNode;
                 currentNode = currentNode.left;
             }
@@ -66,16 +69,30 @@ public class BinarySearchTree <T extends Comparable<T>>{
         BinaryTreeNode<T> parentNode = findParent(data);
         BinaryTreeNode<T> nodeToRemove = parentNode.left.data == data ? parentNode.left : parentNode.right;
 
-        if(nodeToRemove == null){
-
-        }else if(nodeToRemove.left == null){
-
+        // case where the data to be removed is either the root
+        // or the data to be removed is not in the tree
+        if(parentNode == null){
+            if(nodeToRemove == null){
+                return;
+            }else{
+                root = null;
+                return;
+            }
         }
-    }
 
+        if (nodeToRemove.left == null && nodeToRemove.right == null) {
+            if (data.compareTo(parentNode.data) > 0) {
+                parentNode.right = null;
+            } else {
+                parentNode.left = null;
+            }
+        }
+    
+    }
+ 
     public void insert(T data){
         BinaryTreeNode<T> newNode = new BinaryTreeNode<>(data);
-
+  
         if(root == null){
             root = newNode;
             size += 1;
@@ -84,35 +101,35 @@ public class BinarySearchTree <T extends Comparable<T>>{
 
         BinaryTreeNode<T> currentNode = root;
         boolean inserted = false;
-
-        while(!inserted){
+  
+        while( !inserted){ 
             if(newNode.data.compareTo(currentNode.data) > 0){
                 if(currentNode.right == null){
                     currentNode.right = newNode;
                     size += 1;
-                    inserted = true;
+                     i nserted = true;
                 }else{
                     currentNode = currentNode.right;
                 }
-            } else {
+            } else  { 
                 if(currentNode.left == null){
                     currentNode.left = newNode;
                     size += 1;
-                    inserted = true;
+                     i nserted = true;
                 }else{
                     currentNode = currentNode.left;
                 }
             }
-        }
-    }
+     
 
+     
     public static void main(String[] args){
         System.out.println("Hello, World");
 
         BinarySearchTree<Integer> bst = new BinarySearchTree<>();
 
         Random rng = new Random();
-
+  
         for(int i = 0; i < 100; i++){
             bst.insert(rng.nextInt());
         }
@@ -122,7 +139,7 @@ public class BinarySearchTree <T extends Comparable<T>>{
         System.out.println(bst.size);
 
         BinaryTreeNode<Integer> currentNode = bst.root;
-
+  
         while(currentNode != null){
             System.out.println(currentNode.data);
             currentNode = currentNode.right;
